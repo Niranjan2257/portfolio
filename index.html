@@ -7,39 +7,41 @@
     </head>
         <div id="main">
             <!--first page-->
+            <!-- nav bar-->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Work</a>
+                <a href="./Resume.pdf" download>Resume</a>
+                <a href="#" onclick="openContact()">Contact</a>
+
+                <div class="contact_window" id="contact_window">
+                    <div class="contact_box">
+                        <img class="contact_img" src="./image/contact.jpg" alt="">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">×</a>
+                        <div class="contact">
+                            <h1>CONTACT ME</h1>                
+                            <img style="width: 16px;" src="./image/gmail-logo.png" alt="">&nbsp;niranjan2257@gmail.com <br><br>
+                            <img style="width: 16px;" src="./image/call.png" alt="">&nbsp;+91 7909060717
+                            <h1>GET IN TOUCH</h1>
+                            <div>
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/niranjann2257/"><img class="contact_logo" src="./image/linkedin.png" alt=""></a></li>
+                                    <li><a href="https://www.instagram.com/niranjan_nishutosh/"><img class="contact_logo" src="./image/instagram.png" alt=""></a></li>
+                                    <li><a href="https://github.com/Niranjan2257"><img class="contact_logo" src="./image/github.png" alt=""></a></li>
+                                    <li><a href="https://www.facebook.com/nishutosh.niranjan/"><img class="contact_logo" src="./image/facebook.png" alt=""></a></li>
+                                </ul>
+                            </div>                
+                        </div>                
+                    </div>
+                </div>
+
+            </div>
             <div class="profile_page" id="home">
                 <div style="width: 45%; float: left;">
-                    <!-- nav bar-->
-                    <div id="mySidebar" class="sidebar">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#skill">Work</a>
-                        <a href="./Resume.pdf" download>Resume</a>
-                        <a href="#" onclick="openContact()">Contact</a>
-
-                        <div class="contact_window" id="contact_window">
-                            <div class="contact_box">
-                                <img class="contact_img" src="./image/contact.jpg" alt="">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">×</a>
-                                <div class="contact">
-                                    <h1>CONTACT ME</h1>                
-                                    <img style="width: 16px;" src="./image/gmail-logo.png" alt="">&nbsp;niranjan2257@gmail.com <br><br>
-                                    <img style="width: 16px;" src="./image/call.png" alt="">&nbsp;+91 7909060717
-                                    <h1>GET IN TOUCH</h1>
-                                    <div>
-                                        <ul>
-                                            <li><a href="https://www.linkedin.com/in/niranjann2257/"><img class="contact_logo" src="./image/linkedin.png" alt=""></a></li>
-                                            <li><a href="https://www.instagram.com/niranjan_nishutosh/"><img class="contact_logo" src="./image/instagram.png" alt=""></a></li>
-                                            <li><a href="https://github.com/Niranjan2257"><img class="contact_logo" src="./image/github.png" alt=""></a></li>
-                                            <li><a href="https://www.facebook.com/nishutosh.niranjan/"><img class="contact_logo" src="./image/facebook.png" alt=""></a></li>
-                                        </ul>
-                                    </div>                
-                                </div>                
-                            </div>
-                        </div>
-
-                    </div>
+                    
+                    
                     <button class="openbtn" onclick="openNav()">☰</button>
                     <img src="./image/profile.jpg" class="avatar"></div>
                 <div style="width: 45%; float:right ">
@@ -125,21 +127,43 @@
                     </div>
                 </div>
             </div>
-            <!--projects
-            <div class="work">
-                <CENTER><h2>PROJECTS</h2></CENTER>
+            <!--projects -->
+            <div class="work" id="work">
+                <center>
+                  <h2>PROJECTS</h2>
+                </center>
                 <div class="work_item">
-                    <div><img class="work_logo" src="./image/goodera.png" alt="goodera"></div>
-                    <div class="work_txt">
-                        <h3>DATA &nbsp; ANALYST | INTERN</h3>
-                        Migrating dashboards from one platform to another to increase the loading process of data onto the dashboards.
-                        Building a business requirement document (BRD) for various product modules.
-                        Create workflows and SQL snippets, then deployed them on the Goodera platform and maintained BRD for the deployments and configurations. 
-                        Visualization of dashboards to show the impact of their project (Canvas)
-
-                    </div>
+                  <div>
+                    <img class="work_logo" src="./image/portfolio.png" alt="company-logo" />
+                  </div>
+                  <div class="work_txt">
+                    <h3>React Portfolio Site</h3>
+                    <h4>May 2023</h4>
+                    <p> A sleek and modern portfolio website showcasing my work and skills.
+                        Built using React, this site offers an interactive platform to display my projects, experience, and expertise.
+                        It features a clean design, responsive layouts, and smooth transitions for a seamless user experience. 
+                        Explore my portfolio, view project details, and easily get in touch. 
+                        Highlighting my technical skills, education, and work experience, 
+                        this dynamic React portfolio site represents my professional profile and demonstrates my web development and design capabilities.
+                    </p>
+                  </div>
                 </div>
-            </div>-->
+                <div class="work_item">
+                  <div>
+                    <img class="work_logo" src="./image/gitfinder.png" alt="company-logo" />
+                  </div>
+                  <div class="work_txt">
+                    <h3>GitHub Profile Viewer</h3>
+                    <h4>May 2023</h4>
+                    <p> A web application created with HTML, CSS, and JavaScript that allows users to explore GitHub profiles. 
+                        It utilizes the GitHub API to fetch and display information such as repositories, followers, and public activity. 
+                        The app provides a user-friendly interface for discovering projects and contributions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+
             <!--certification-->
             <div class="skill" id="certifications" >
                 <div><CENTER><h2>CERTIFICATION</h2></CENTER></div>
